@@ -1,0 +1,421 @@
+
+
+<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>应用详情 - 应用宝官网</title>
+<link href="http://img6.sj.qq.com/res/static/myapp/staticVersion/20140928/assets/css/app/page/detailsLess.css?t=20140928.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://img1.sj.qq.com/api/styles/sjqqapi.css" />
+<style type="text/css">
+.com-menu-list-box .com-borderR{position:relative;}
+.com-new{width:24px; height:15px; display:inline-block; position:absolute; top:22px; margin:0; left:104px; background: url('http://img6.sj.qq.com/res/static/myapp/staticVersion/201507/images/new-icon.png?20140110') 0 0 no-repeat}
+
+.det-othinfo-pbox .det-othinfo-plist::-webkit-scrollbar, .m_download::-webkit-scrollbar,.scroll-style::-webkit-scrollbar,.giftPop::-webkit-scrollbar{ width: 9px; height: 9px;}
+.det-othinfo-pbox .det-othinfo-plist::-webkit-scrollbar-button:vertical, .det-othinfo-pbox .det-othinfo-plist::-webkit-scrollbar-button:horizontal,.m_download::-webkit-scrollbar-button:vertical,.scroll-style::-webkit-scrollbar-button:vertical,.giftPop::-webkit-scrollbar-button:vertical { display: none;}
+.det-othinfo-pbox .det-othinfo-plist::-webkit-scrollbar-track-piece,.m_download::-webkit-scrollbar-track-piece,.scroll-style::-webkit-scrollbar-track-piece,.giftPop::-webkit-scrollbar-track-piece{ background: #f0f0f0;}
+.det-othinfo-pbox .det-othinfo-plist::-webkit-scrollbar-thumb:vertical, .det-othinfo-pbox .det-othinfo-plist::-webkit-scrollbar-thumb:horizontal,.m_download::-webkit-scrollbar-thumb:vertical,.scroll-style::-webkit-scrollbar-thumb:vertical,.giftPop::-webkit-scrollbar-thumb:vertical { background-color: #b0b0b0; border-radius: 5px;}
+.det-othinfo-pbox .det-othinfo-plist::-webkit-scrollbar-thumb:vertical, .det-othinfo-pbox .det-othinfo-plist::-webkit-scrollbar-thumb:horizontal:hover,.m_download::-webkit-scrollbar-thumb:vertical:hover,.scroll-style::-webkit-scrollbar-thumb:vertical:hover,.giftPop::-webkit-scrollbar-thumb:vertical:hover { background-color: #999;}
+
+.det-othinfo-pbox{cursor: default; position: relative; padding-bottom: 4px;}
+.det-othinfo-pbox .det-othinfo-plist{display: none;}
+.det-othinfo-pbox:hover .det-othinfo-plist{display: block; position: absolute; top: 20px; left: 0;}
+.det-othinfo-pbox .det-othinfo-pre{background: url('http://img1.sj.qq.com/res/static/m5/201510/images/premission-icon.png') no-repeat 0 1px; padding-left: 15px; width: 260px;}
+.det-othinfo-pbox:hover .det-othinfo-pre{color: #3375d6; background-position: 0 -84px; }
+.det-othinfo-pbox .det-othinfo-plist{ background: #fff; max-height: 250px; overflow-y:auto; border:1px #a2a2a2 solid; padding-bottom: 8px; color: #666; width: 168px;}
+.det-othinfo-pbox .det-othinfo-plist li{line-height: 20px; padding:0 12px;}
+.det-othinfo-pbox .det-othinfo-plist .t{color: #333; background: #eeeeee; height: 33px; line-height: 33px; padding-left: 13px; border-bottom: 1px #dbdbdb solid; margin-bottom: 6px;}
+.det-othinfo-pbox .det-othinfo-plist .l{float: left;}
+.det-othinfo-pbox .det-othinfo-plist .r{float: left; margin-left: 2px; width: 125px; word-break:break-word;}
+</style>
+
+<!--[if lt IE 9]>
+<script type="text/javascript"> 
+  var html5Tags=['header' ,'footer','article','nav' ,'section','aside'];
+  for(var i=0;i<html5Tags.length;i++){
+      document.createElement(html5Tags[i]);
+  }
+</script>
+<![endif]-->
+</head>
+<body urlPre="http://myapp.com" urlPath="http://img4.sj.qq.com/res/static/myapp">
+<div class="com-header">
+	<div class="com-header-center-container"> 
+		<a class="com-header-logo-link" id="J_logo" href="http://sj.qq.com"></a>
+      	<ul class="com-menu-list-box">
+      		<li><a class="com-menu-btn" id="J_index" href="http://sj.qq.com">首页</a></li>
+        	<li><a class="com-menu-btn selected"  href="http://sj.qq.com/myapp/">应用市场</a><i class="com-hot"></i></li>
+        	<li><a class="com-menu-btn"  href="http://bbs.open.qq.com/forum-1687-1.html" target="_blank">用户论坛</a></li>
+        	<li><a class="com-menu-btn" target="_blank" href="http://open.qq.com/">开放平台</a></li>
+          <li class="com-borderR"><a class="com-menu-btn" href="http://1.qq.com/yingyongbao/" target="_blank">网页游戏</a><i class="com-hot com-new"></i></li>
+      	</ul>
+   		<div class="clear"></div>
+	</div>
+</div>
+<div class="com-nav">
+	<div class="com-nav-center-container"> 
+      	<ul class="com-nav-list-box">
+      		<li><a class="com-nav-btn " href="../myapp/index.htm">广场</a></li>
+        	<li><a class="com-nav-btn "  href="../myapp/category.htm?orgame=1">应用</a></li>
+        	<li class="last"><a class="com-nav-btn "  href="../myapp/category.htm?orgame=2">游戏</a></li>
+      	</ul>
+<div class="search">
+	<form id="J_SearchForm" role="search" action="/myapp/search.htm" method="get">
+		<label for="kw">
+			<input id="J_MainInput" autocomplete="off" class="search-input" type="text" value="搜索应用或游戏..." size="20" name="kw"> 
+			<input id="J_SearchBtn" type="submit" value="" class="icon-search">
+		</label>
+	</form>
+	<div id="J_HotSearch" class="hot-search" data-loaded="false">
+		<div class="hot-search-box">
+			<span class="hot-search-title">热门搜索</span>
+			<ul id="J_HotSearchList" class="hot-search-list"></ul>
+		</div>
+	</div>
+	<div id="J_SearchAssociate" class="search-associate">
+		<div class="hot-associate-box">
+			<ul id="J_AssociateList" class="associate-list"></ul>
+		</div>
+	</div>
+</div>   		<div class="clear"></div>
+	</div>
+	
+</div>
+<div class="com-container" id="J_DetDataContainer" flag="16533">
+	<div class="det-main-container">
+		<div class="det-ins-container J_Mod " data-modname="appInfo">
+			<div class="det-icon">
+				<img src="http://pp.myapp.com/ma_icon/0/icon_12127266_1500450269/96" />
+				<i class="icon-union-safe">315可信应用白名单</i>
+			</div>
+			<div class="det-ins-data">
+				<div class="det-name">
+					<div class="det-name-int">王者荣耀（小乔S级皮肤上线）</div>
+					<div class="" id="J_GfHoverBtn" style="display:none">
+						<div class="official-text"></div>
+						<div class=" official-hover-box"><span class="out-corner">◆<span class="int-corner">◆</span></span></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="det-star-box">
+					<div class="com-star-5-D det-ins-star"></div>
+					<div class="com-blue-star-num">4.1分</div>
+					<a class="det-comment-num" href="#CommentList" id="J_DetCommentNum"></a>
+					<div class="clear"></div>
+				</div>
+				<div class="det-insnum-line">
+					<div class="det-ins-num">3.7亿下载</div>
+					<div class="det-insnum-dot">·</div>
+					<div class="det-size">471.58M</div>
+					<div id="J_AdvBox" class="det-adv"></div>
+					<div class="det-type-box">
+						<div class="det-type-tit">分类：</div>
+						<a href="category.htm?categoryId=121&orgame=2" class="det-type-link" id="J_DetCate">网络游戏</a>
+						<div class="clear"></div>
+						<i class="icon-union-safe">315可信应用白名单</i>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="det-ins-btn-box">
+				<a class="det-ins-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/901DE537371541B8482D4B18CE8BF806.apk?fsname=com.tencent.tmgp.sgame_1.20.1.21_20012107.apk&csr=1bbd" asistanturlid="990499" appname="王者荣耀（小乔S级皮肤上线）" appicon="http://pp.myapp.com/ma_icon/0/icon_12127266_1500450269/96" apk="com.tencent.tmgp.sgame"></a>
+				<a class="det-down-btn" href="javascript:void(0)" data-apkUrl="http://imtt.dd.qq.com/16891/901DE537371541B8482D4B18CE8BF806.apk?fsname=com.tencent.tmgp.sgame_1.20.1.21_20012107.apk&csr=1bbd" appname="王者荣耀（小乔S级皮肤上线）" apk="com.tencent.tmgp.sgame"></a>
+			</div>
+			<div class="clear"></div> 
+		</div>
+		<div class="det-pic-scroll-container" id="J_PicTurnContainer">
+            <div id="J_PicTurnHoverBox" class="pic-turn-hover-box">
+                <span id="J_PicTurnHiddenBox" class="pic-turn-hidden-box">
+                    <span id="J_PicTurnImgBox" class="pic-turn-img-box">
+                    	<div class="pic-img-box">
+                        	<img data-src='http://pp.myapp.com/ma_pic2/0/shot_12127266_1_1500450267/550' src="" id='picInImgBoxImg0'/>
+                        	<!--<div class="pic-img-int-border"></div>-->
+                        </div>
+                    	<div class="pic-img-box">
+                        	<img data-src='http://pp.myapp.com/ma_pic2/0/shot_12127266_2_1500450267/550' src="" id='picInImgBoxImg1'/>
+                        	<!--<div class="pic-img-int-border"></div>-->
+                        </div>
+                    	<div class="pic-img-box">
+                        	<img data-src='http://pp.myapp.com/ma_pic2/0/shot_12127266_3_1500450267/550' src="" id='picInImgBoxImg2'/>
+                        	<!--<div class="pic-img-int-border"></div>-->
+                        </div>
+                    	<div class="pic-img-box">
+                        	<img data-src='http://pp.myapp.com/ma_pic2/0/shot_12127266_4_1500450267/550' src="" id='picInImgBoxImg3'/>
+                        	<!--<div class="pic-img-int-border"></div>-->
+                        </div>
+                    	<div class="pic-img-box">
+                        	<img data-src='http://pp.myapp.com/ma_pic2/0/shot_12127266_5_1500450267/550' src="" id='picInImgBoxImg4'/>
+                        	<!--<div class="pic-img-int-border"></div>-->
+                        </div>
+                    </span>
+                </span>
+                <span id="J_PicTurnLeftBtn" class="pic-turn-left-btn"></span>
+                <span id="J_PicTurnRightBtn" class="pic-turn-right-btn"></span>
+            </div>
+            <div class="det-pic-loading" id="J_DetPicLoading"></div>
+		</div>
+		<div class="det-othinfo-container J_Mod" data-modname="appOthInfo">
+			<div class="det-othinfo-tit">版本号：</div>
+			<div class="det-othinfo-data">V1.20.1.21</div>
+			<div class="det-othinfo-tit">更新时间：</div>
+			<div class="det-othinfo-data" id="J_ApkPublishTime" data-apkPublishTime="1500450271"></div>
+					<div class="det-othinfo-tit">开发商：</div>
+					<div class="det-othinfo-data">腾讯</div>
+                <div class="det-othinfo-data det-othinfo-pbox">
+                    <div class="det-othinfo-pre">查看权限</div> 
+                    <ul class="det-othinfo-plist">
+                       <li class="t">需要调用以下重要权限</li>               
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许程序访问有关网络的信息</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序访问Wi-Fi网络的信息</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用访问精确位置</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序更改Wi-Fi连接状态</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序打开网络套接字</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许安装和可移动存储卸载文件系统</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许只读到电话状态访问，包括该装置的电话号码，当前蜂窝网络信息，任何正在进行的呼叫的状态，并且任何一个列表 PhoneAccount的注册在设备上</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序创建一个使用类型的窗口 TYPE_SYSTEM_ALERT，所有其他应用程序的顶部只有极少数的应用程序应该使用此权限; 这些窗口用于与用户的系统级相互作用</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序写入到外部存储器</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许使用PowerManager WakeLocks让处理器进入休眠或屏幕变暗</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许一个程序初始化一个电话拨号不需通过拨号用户界面去为用户确认呼叫</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序访问的大致位置</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序读取短信</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序发送短信</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序读取或写入系统设置</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序连接到已配对的蓝牙设备</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序发现和配对蓝牙设备</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序改变网络连接状态</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序读取低级别的系统日志文件</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序录制音频</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序修改全局音频设置</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序广播常用意图这些广播数据由该系统被完成之后保持，以便客户端可以快速地检索数据，而不必等待下一个广播</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序读取或写入系统设置</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许使用PowerManager WakeLocks让处理器进入休眠或屏幕变暗</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许访问振动</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">需要能够访问摄像机装置</div></li>
+                          <li class="clearfix"><div class="l">-</div><div class="r">允许应用程序从外部存储读取</div></li>
+                    </ul>
+                 </div>                  
+          	<div class="clear"></div>
+		</div>
+		<div class="det-intro-container">
+            <div class="det-intro-tit">应用信息</div>
+            <div class="det-intro-text" id="J_DetAppDataInfo">
+                <div class="det-app-data-info">【游戏介绍】</br>《王者荣耀》是腾讯首款5V5英雄公平对战手游，腾讯最新MOBA手游大作！5V5王者峡谷、5V5深渊大乱斗、以及3V3、1V1等多样模式一键体验，热血竞技尽享快感！海量英雄随心选择，精妙配合默契作战！10秒实时跨区匹配，与好友组队登顶最强王者！操作简单易上手，一血、五杀、超神，极致还原经典体验！实力操作公平对战，回归MOBA初心！</br>赶快加入《王者荣耀》，随时开启你的激情团战！</div>
+                <div class="det-app-data-tit">更新内容：</div>
+                <div class="det-app-data-info">【全新内容】</br>（1）万物有灵-鬼谷子：鬼谷子将作为辅助登陆王者峡谷，隐身技能玩法再次升级，大招能让队友集体隐身！</br>（2）S8赛季开启：在当前赛季排位赛中获胜10场或以上，就能获得赛季皮肤奖励！在钻石与王者段位之间加入全新段位至尊星耀。</br>（3）新玩法-无限乱斗：每隔两分钟，地图上会刷新不同的地图BUFF（如所有英雄输出增加30%等），更爽快更激烈的战斗模式！</br>【更多优化】</br>（1）社交系统优化，包括选将界面显示英雄名称，好友备注名显示等。</br>（2）战场体验优化，包括单人训练关优化、地图血量提示功能等。</div>
+            </div>
+            <a class="det-intro-showmore" href="javascript:void(0)" id="J_DetIntroShowMore">显示更多</a> 
+		</div>
+		<div class="det-about-apps-container J_Mod btn-install-cross" data-modname="appLikeList">
+            <div class="det-about-tit">相关应用</div>
+            <ul class="det-about-applist">
+                <li class="det-about-app-box">
+                    <div class="app-icon"><a href="../myapp/detail.htm?apkName=com.yinhan.hunter.tx&apkCode=379" target="_blank" data-title="时空猎人-高清版" class="icon"><img src="http://pp.myapp.com/ma_icon/0/icon_1012592_1501485882/256" /></a></div>
+                    <div class="app-right-data">
+                        <a class="appName" href="../myapp/detail.htm?apkName=com.yinhan.hunter.tx&apkCode=379" target="_blank">时空猎人-高清版</a>
+                        <div class="down-times">9473万下载</div>
+	<a class="T_ComEventAppIns com-install-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/5EAF04082736EE4193771A7B2416EE63.apk?fsname=com.yinhan.hunter.tx_5.1.0787_379.apk&csr=3554" asistanturlid="990499" appname="时空猎人-高清版" apk="com.yinhan.hunter.tx" appicon="http://pp.myapp.com/ma_icon/0/icon_1012592_1501485882/256">安装到手机</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="det-about-app-box">
+                    <div class="app-icon"><a href="../myapp/detail.htm?apkName=com.tencent.qqxl&apkCode=26401" target="_blank" data-title="QQ降龙" class="icon"><img src="http://pp.myapp.com/ma_icon/0/icon_8966_1484538435/256" /></a></div>
+                    <div class="app-right-data">
+                        <a class="appName" href="../myapp/detail.htm?apkName=com.tencent.qqxl&apkCode=26401" target="_blank">QQ降龙</a>
+                        <div class="down-times">513万下载</div>
+	<a class="T_ComEventAppIns com-install-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/10B05E6B8AB7625A21F2F1A31647EE9B.apk?fsname=com.tencent.qqxl_2.64.01_26401.apk&csr=3554" asistanturlid="990499" appname="QQ降龙" apk="com.tencent.qqxl" appicon="http://pp.myapp.com/ma_icon/0/icon_8966_1484538435/256">安装到手机</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="det-about-app-box">
+                    <div class="app-icon"><a href="../myapp/detail.htm?apkName=com.tencent.JWX&apkCode=46" target="_blank" data-title="傲世西游" class="icon"><img src="http://pp.myapp.com/ma_icon/0/icon_1195255_1500013390/256" /></a></div>
+                    <div class="app-right-data">
+                        <a class="appName" href="../myapp/detail.htm?apkName=com.tencent.JWX&apkCode=46" target="_blank">傲世西游</a>
+                        <div class="down-times">933万下载</div>
+	<a class="T_ComEventAppIns com-install-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/E63E17F40BE0AF54F62DF14963309075.apk?fsname=com.tencent.JWX_1.4.6.1_46.apk&csr=3554" asistanturlid="990499" appname="傲世西游" apk="com.tencent.JWX" appicon="http://pp.myapp.com/ma_icon/0/icon_1195255_1500013390/256">安装到手机</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="det-about-app-box">
+                    <div class="app-icon"><a href="../myapp/detail.htm?apkName=com.tencent.nmrq&apkCode=302200" target="_blank" data-title="新部落守卫战" class="icon"><img src="http://pp.myapp.com/ma_icon/0/icon_1194645_1500540771/256" /></a></div>
+                    <div class="app-right-data">
+                        <a class="appName" href="../myapp/detail.htm?apkName=com.tencent.nmrq&apkCode=302200" target="_blank">新部落守卫战</a>
+                        <div class="down-times">963万下载</div>
+	<a class="T_ComEventAppIns com-install-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/3A0088B2A86A8EE842C450A604AD294A.apk?fsname=com.tencent.nmrq_3.22.00_302200.apk&csr=3554" asistanturlid="990499" appname="新部落守卫战" apk="com.tencent.nmrq" appicon="http://pp.myapp.com/ma_icon/0/icon_1194645_1500540771/256">安装到手机</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="clear"></li>
+            </ul>
+		</div>
+		<div class="det-samedeve-apps-container J_Mod btn-install-cross" data-modname="appSameList">
+            <div class="det-samedeve-tit">同一开发者</div>
+            <ul class="det-samedeve-applist">
+                <li class="det-samedeve-app-box">
+                    <div class="app-icon"><a href="../myapp/detail.htm?apkName=com.tencent.peng&apkCode=68" target="_blank" data-title="天天爱消除" class="icon"><img src="http://pp.myapp.com/ma_icon/0/icon_10098215_1501147914/256" /></a></div>
+                    <div class="app-right-data">
+                        <a class="appName" href="../myapp/detail.htm?apkName=com.tencent.peng&apkCode=68" target="_blank">天天爱消除</a>
+                        <div class="down-times">1.9亿下载</div>
+	<a class="T_ComEventAppIns com-install-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/F8AADE558A4C3ABBAD557C03B1124EF0.apk?fsname=com.tencent.peng_1.53.0.0Build8_68.apk&csr=3554" asistanturlid="990499" appname="天天爱消除" apk="com.tencent.peng" appicon="http://pp.myapp.com/ma_icon/0/icon_10098215_1501147914/256">安装到手机</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="det-samedeve-app-box">
+                    <div class="app-icon"><a href="../myapp/detail.htm?apkName=com.tencent.pao&apkCode=147" target="_blank" data-title="天天酷跑-极速前进4官方手游" class="icon"><img src="http://pp.myapp.com/ma_icon/0/icon_10099632_1499826754/256" /></a></div>
+                    <div class="app-right-data">
+                        <a class="appName" href="../myapp/detail.htm?apkName=com.tencent.pao&apkCode=147" target="_blank">天天酷跑-极速前进4官方手游</a>
+                        <div class="down-times">8.1亿下载</div>
+	<a class="T_ComEventAppIns com-install-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/4009C8CFC117BAE0D15896B04757EBA2.apk?fsname=com.tencent.pao_1.0.47.0_147.apk&csr=3554" asistanturlid="990499" appname="天天酷跑-极速前进4官方手游" apk="com.tencent.pao" appicon="http://pp.myapp.com/ma_icon/0/icon_10099632_1499826754/256">安装到手机</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="det-samedeve-app-box">
+                    <div class="app-icon"><a href="../myapp/detail.htm?apkName=com.tencent.qqgame.qqhlupwvga&apkCode=36130" target="_blank" data-title="欢乐升级（腾讯）" class="icon"><img src="http://pp.myapp.com/ma_icon/0/icon_10103101_1500974847/256" /></a></div>
+                    <div class="app-right-data">
+                        <a class="appName" href="../myapp/detail.htm?apkName=com.tencent.qqgame.qqhlupwvga&apkCode=36130" target="_blank">欢乐升级（腾讯）</a>
+                        <div class="down-times">1638万下载</div>
+	<a class="T_ComEventAppIns com-install-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/AB67965B196085A455A4603B45F89B67.apk?fsname=com.tencent.qqgame.qqhlupwvga_3.6.13_36130.apk&csr=3554" asistanturlid="990499" appname="欢乐升级（腾讯）" apk="com.tencent.qqgame.qqhlupwvga" appicon="http://pp.myapp.com/ma_icon/0/icon_10103101_1500974847/256">安装到手机</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="det-samedeve-app-box">
+                    <div class="app-icon"><a href="../myapp/detail.htm?apkName=com.qqgame.happymj&apkCode=69130" target="_blank" data-title="欢乐麻将全集（腾讯）" class="icon"><img src="http://pp.myapp.com/ma_icon/0/icon_10125368_1498062566/256" /></a></div>
+                    <div class="app-right-data">
+                        <a class="appName" href="../myapp/detail.htm?apkName=com.qqgame.happymj&apkCode=69130" target="_blank">欢乐麻将全集（腾讯）</a>
+                        <div class="down-times">1.5亿下载</div>
+	<a class="T_ComEventAppIns com-install-btn" href="javascript:void(0)" onclick="qqapp_dl_apk(this);" ex_url="http://imtt.dd.qq.com/16891/C5CC4219229FE3D0DACFCCE10AAF8847.apk?fsname=com.qqgame.happymj_6.9.13_69130.apk&csr=3554" asistanturlid="990499" appname="欢乐麻将全集（腾讯）" apk="com.qqgame.happymj" appicon="http://pp.myapp.com/ma_icon/0/icon_10125368_1498062566/256">安装到手机</a>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+                <li class="clear"></li>
+            </ul> 
+		</div>
+		<div class="det-submit-container J_Mod" data-modname="commentInfo">
+			<a name="CommentList" id="CommentList"></a>
+            <div class="det-submit-tit">用户评论</div>
+		</div> 
+		<div class="det-comment-list-container">
+            <ul class="det-comment-list-box" id="J_DetShowCommentList">
+            </ul>
+            <a class="det-comment-show-more-btn" id="J_DetCommentShowMoreBtn" href="javascript:void(0)">查看更多评论</a>
+		</div> 
+		<div class="det-submit-none" id="J_DetSubmitNone">暂无评论</div>
+	</div>
+</div>
+<div class="com-footer" style="margin-top:50px;">
+	<div class="com-footer-top-box clearfix">
+		<div class="com-footer-top-item">
+  			<h3>合作和帮助</h3>
+  			<p><a  href="http://open.qq.com/"target="_blank" >开放平台</a></p>
+  			<p><a id="J_api" href="http://sj.qq.com/api/index.html" target="_blank">一键安装</a></p>
+  			<p><a  href="http://sj.qq.com/links.html" target="_blank">友情链接</a></p>
+  		</div>
+ 		<div class="com-footer-top-item">
+  			<h3>产品动态</h3>
+  			<p><a  href="http://bbs.open.qq.com/forum.php?mod=forumdisplay&fid=1694&filter=typeid&typeid=8211" target="_blank">更新记录</a></p>
+  			<p><a id="J_intro" href="http://sj.qq.com/intro.html" target="_blank">功能介绍</a></p>
+  			<p><a id="J_root" href="http://sj.qq.com/root/index.html" target="_blank">一键Root</a></p>
+  			<p><a id="J_shuaji" href="http://sj.qq.com/shuaji/index.html" target="_blank">一键刷机</a></p>
+  			<p><a  href="http://bbs.open.qq.com/thread-3934897-1-1.html" target="_blank">腾讯飞传</a></p>
+ 		</div>
+
+ 		<div class="com-footer-top-item">
+ 			<div class="erwm"></div>
+  			<h3>联系我们</h3>
+  			<p class="com-footer-contus">QQ    群：218938467</p>
+  			<p class="com-footer-contus">官方微博：<a class="qqweibo" target="_blank" href="http://e.t.qq.com/download_app"></a><a class="xinlaweibo" href="http://e.weibo.com/downloadapp" target="_blank"></a></p>
+  			<p class="com-footer-contus">用户论坛：<a class="chart" target="_blank" href="http://androidpc.app.qq.com/app1/vertis.do?id=201311140001"></a>加入</p>
+  			<p>微信公众账号：应用宝</p>
+ 		</div>
+ 		<div class="clear"></div>
+ 	</div>
+
+  <div class="office-info" style="text-align:center; line-height:50px; margin-top:20px;">
+    深圳市腾讯计算机系统有限公司 &nbsp;&nbsp;&nbsp;&nbsp;
+    <a style="color:#989898" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001"><span>粤公网安备 44030002000001号</span>&nbsp;<img style="vertical-align: text-bottom;" }="" src="http://mat1.gtimg.com/www/images/qq2012/icon_yuewangga1.png" width="16" height="16"></a>
+  </div>
+
+	<div class="com-footer-center-container" style="padding-top:20px;">
+
+    	<a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a>|
+    	<a href="http://www.tencent.com/en-us/index.shtml" target="_blank">About Tencent</a>|
+   	 	<a href="http://www.qq.com/contract.shtml" target="_blank">服务条款</a>|
+   	 	<a href="http://wiki.open.qq.com/index.php?title=%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E4%BE%B5%E6%9D%83%E6%8A%95%E8%AF%89%E6%8C%87%E5%BC%95" target="_blank">侵权投诉指引</a>|
+    	<a href="http://www.tencent.com/zh-cn/at/contactus.shtml" target="_blank">商务洽谈</a>|
+    	<a href="http://hr.tencent.com/" target="_blank">腾讯招聘</a>|
+    	<a href="http://gongyi.qq.com/" target="_blank">腾讯公益</a>|
+    	<a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank">版权所有</a>
+    	<div>Copyright © 2012 - 2014 Tencent. All Rights Reserved.</div>
+      <div class="security clearfix">
+        <p>
+          <span class="fl"><a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank" rel="nofollow"><img width="44" height="50" border="0" alt="深圳网络警察报警平台" src="http://img6.sj.qq.com/res/static/myapp/assets/images/common/police.png"></a></span>
+          <span class="fr"><a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank" rel="nofollow">深圳网络警<br>
+            察报警平台</a></span>
+        </p>
+        <p>
+          <span class="fl"><a href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403101010155" target="_blank" rel="nofollow"><img width="41" height="49" border="0" alt="公共信息安全网络监察" src="http://img6.sj.qq.com/res/static/myapp/assets/images/common/security.png"></a></span>
+          <span class="fr"><a href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403101010155" target="_blank" rel="nofollow">公共信息安<br>
+            全网络监察</a></span>
+        </p>
+        <p>
+          <span class="fl"><a href="http://white.anva.org.cn/" target="_blank" rel="nofollow"><img width="48" height="48" border="0" alt="中国互联网协会认证标志" src="http://img6.sj.qq.com/res/static/myapp/assets/images/common/anva-c.png"></a></span>
+        </p>
+        <p>
+          <span class="fl"><a href="http://white.anva.org.cn/" target="_blank" rel="nofollow"><img width="48" height="48" border="0" alt="中国互联网协会认证标志" src="http://img6.sj.qq.com/res/static/myapp/assets/images/common/anva-e.png"></a></span>
+        </p>
+      </div>
+	</div>
+</div>
+<script>
+var MOLO = {
+	timestamp : "20140928",//时间戳，改时间戳立即清除静态文件缓存
+	staticVersion : "20140928",//静态文件线上打包部署版本，默认是2.0.0版本
+	staticDomain : "http://img4.sj.qq.com/res/static/myapp/staticVersion/20140928",//http://img1.sj.qq.com/res/app2/
+	assets :"/assets",
+	marketImagesUrl : "http://img4.sj.qq.com/res/static/myapp/staticVersion/20140928/assets/images/app/m4/",
+	urlPre : "http://myapp.com",
+	pageKey : "details",
+	senseParam : "",
+  dp:10006
+}
+</script>
+
+<div class="return-top">
+	<div id="return" class="com-return">
+		<a href="javascript:void(0);"></a>
+	</div>
+</div>
+<script src="http://img4.sj.qq.com/res/static/myapp/assets/js/lib/seajs/2.0/sea.js" type="text/javascript"></script>
+<script type="text/javascript">
+/** 线上 http://ty.3gqq.com/qqapi/scripts/sjqqapi.js**/
+seajs.use(["http://img4.sj.qq.com/res/static/myapp/assets/js/jquery-seajs", "http://img1.sj.qq.com/api/scripts/sjqqapi.js" , ], function(){
+	seajs.use(['http://img4.sj.qq.com/res/static/myapp/staticVersion/20140928/assets/js/app/page/details']);
+});
+
+</script>
+
+<div style="display:none;">
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=11507095" charset="UTF-8"></script>
+</div>
+
+<script type="text/javascript" src="http://pingjs.qq.com/tcss.ping.js"></script>
+<script type="text/javascript">
+if(typeof pgvMain==='function'){
+    pgvMain({virtualDomain: "sj.qq.com"});
+}
+</script><script type="text/javascript">
+var appDetailData = {
+	orgame : "1",
+	apkName : "com.tencent.tmgp.sgame",
+	apkCode : "20012107",
+	appId : "12127266",
+	appName: "王者荣耀（小乔S级皮肤上线）",
+	iconUrl:"http://pp.myapp.com/ma_icon/0/icon_12127266_1500450269/96",
+	appScore:"",
+	downTimes:"371887893",
+	downUrl:"http://imtt.dd.qq.com/16891/901DE537371541B8482D4B18CE8BF806.apk?fsname=com.tencent.tmgp.sgame_1.20.1.21_20012107.apk&csr=1bbd",
+	tipsUpDown:"false"
+}
+</script>
+</body>
+</html>
