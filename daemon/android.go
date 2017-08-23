@@ -211,7 +211,7 @@ func main() {
 		var err error
 		switch action {
 
-		case "id", "pkg", "package", "apk":
+		case "a", "id", "pkg", "package", "apk":
 			log.Infof("handle Package=%s @ wdj", id)
 			if err = HandleWdj(id); err != nil {
 				log.Errorf("handle Package=%s @ wdj failed: %s", id, err.Error())

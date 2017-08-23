@@ -180,9 +180,9 @@ CREATE TABLE IF NOT EXISTS android_queue (
 COMMENT ON TABLE android_queue IS 'Apple Task Queue';
 -----------------------------------------
 -- Function: add android id to queue
-CREATE OR REPLACE FUNCTION android_apk(_id BIGINT)
+CREATE OR REPLACE FUNCTION android_apk(_apk TEXT)
   RETURNS VOID AS
-$$BEGIN INSERT INTO android_queue (id) VALUES ('!' || _id :: TEXT);
+$$BEGIN INSERT INTO android_queue (id) VALUES ('!' || _apk);
 END;$$
 LANGUAGE plpgsql VOLATILE;
 COMMENT ON FUNCTION android_apk(BIGINT) IS '向安卓队列中添加apk任务';
