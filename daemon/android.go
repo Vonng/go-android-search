@@ -172,22 +172,23 @@ func Worker(id int, c <-chan Message) {
 	for msg := range c {
 		switch msg.Type {
 		case TypePackage:
-			log.Infof("[WORKER:%d] handle Package=%s @ wdj", id, msg.ID)
 			if err = HandleWdj(msg.ID); err != nil {
 				log.Errorf("[WORKER:%d] handle Package=%s @ wdj failed: %s", id, msg.ID, err.Error())
+			} else {
+				log.Infof("[WORKER:%d] done Package=%s @ wdj", id, msg.ID)
 			}
-			log.Infof("[WORKER:%d] done Package=%s @ wdj", id, msg.ID)
-			log.Infof("[WORKER:%d] handle Package=%s @ sjqq", id, msg.ID)
+
 			if err = HandleSjqq(msg.ID); err != nil {
 				log.Errorf("[WORKER:%d] handle Package=%s @ sjqq failed: %s", id, msg.ID, err.Error())
+			} else {
+				log.Infof("[WORKER:%d] done Package=%s @ sjqq", id, msg.ID)
 			}
-			log.Infof("[WORKER:%d] done Package=%s @ sjqq", id, msg.ID)
 		case TypeKeywords:
-			log.Infof("[WORKER:%d] handle Keyword=%s", id, msg.ID)
 			if err = HandleKeyword(msg.ID); err != nil {
 				log.Errorf("[WORKER:%d] handle Keyword=%s failed: %s", id, msg.ID, err.Error())
+			} else {
+				log.Infof("[WORKER:%d] done keyword=%s", id, msg.ID)
 			}
-			log.Infof("[WORKER:%d] done keyword=%s", id, msg.ID)
 		}
 	}
 	log.Infof("[WORK] %d finish", id)
@@ -212,22 +213,23 @@ func main() {
 		switch action {
 
 		case "a", "id", "pkg", "package", "apk":
-			log.Infof("handle Package=%s @ wdj", id)
 			if err = HandleWdj(id); err != nil {
 				log.Errorf("handle Package=%s @ wdj failed: %s", id, err.Error())
+			} else {
+				log.Infof("done Package=%s @ wdj", id)
 			}
-			log.Infof("done Package=%s @ wdj", id)
-			log.Infof("handle Package=%s @ sjqq", id)
+
 			if err = HandleSjqq(id); err != nil {
 				log.Errorf("handle Package=%s @ sjqq failed: %s", id, err.Error())
+			} else {
+				log.Infof("done Package=%s @ sjqq", id)
 			}
-			log.Infof("done Package=%s @ sjqq", id)
 		case "k", "key", "keyword", "keywords", "search":
-			log.Infof("handle Keywords=%s", id)
 			if err := HandleKeyword(id); err != nil {
 				log.Errorf("handle Keywords=%s failed: %s", id, err.Error())
+			} else {
+				log.Infof("done Keywords=%s", id)
 			}
-			log.Infof("done Keywords=%s", id)
 		}
 		os.Exit(0)
 	}
